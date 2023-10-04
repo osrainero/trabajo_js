@@ -1,0 +1,27 @@
+[
+    {
+      "nombre": "Gol Trend",
+      "marca": "Volkswagen",
+      "precio": 1234567,
+      "color": "Gris Plata Lunar"
+    },
+    {
+      "nombre": "Ka",
+      "marca": "Ford",
+      "precio": 2345678,
+      "color": "Negro casi oscuro"
+    },
+    {
+      "nombre": "Clio",
+      "marca": "Renault",
+      "precio": 3456789,
+      "color": "Rojo Fuego"
+    },
+    {
+      "nombre": "Etios",
+      "marca": "Toyota",
+      "precio": 4567891,
+      "color": "Blanco Ala"
+    }
+  ]
+  

@@ -1,0 +1,155 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h2{
+    width: 100%;
+  }
+  
+  /* Estilos para el menú de navegación */
+  
+  #nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #usuario {
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  #nav button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #nav button:hover {
+    background-color: #0056b3;
+  }
+  
+
+.autos-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+  }
+  
+  .auto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 250px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+ 
+  .auto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el formulario de compra */
+  
+  #compraForm {
+    margin-top: 20px;
+  }
+  
+  #autosDisponibles {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #compraForm button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #compraForm button:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Estilos para el formulario de venta */
+  
+  .autosVenta {
+    margin-top: 20px;
+  }
+  
+  #autoForm label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  #autoForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #autoForm button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #autoForm button:hover {
+    background-color: #ffab00;
+  }
+  
+  .autoVendido {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* Estilos responsivos */
+  
+  @media (max-width: 768px) {
+    main {
+      padding: 10px;
+    }
+  }
+  
