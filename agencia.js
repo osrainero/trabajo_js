@@ -27,18 +27,18 @@ cargarDatosDesdeJSON().then((datos) => {
     const listaHTML = `
       <h2>Estos son los autos a la venta:</h2>
       ${autos.map(auto => `
-          <div class="auto">
-              <h3>${auto.nombre}</h3>
-              <p><strong>Marca:</strong> ${auto.marca}</p>
-              <p><strong>Precio:</strong> ${auto.precio}</p>
-              <p><strong>Color:</strong> ${auto.color}</p>
-          </div>
+        <div class="auto">
+          <h3>${auto.nombre}</h3>
+          <p><strong>Marca:</strong> ${auto.marca}</p>
+          <p><strong>Precio:</strong> ${auto.precio}</p>
+          <p><strong>Color:</strong> ${auto.color}</p>
+        </div>
       `).join('')}
     `;
     autosListDiv.innerHTML = listaHTML;
   }
 
-    function registrarNombre() {
+  function registrarNombre() {
     const nombreGuardado = localStorage.getItem('nombreUsuario');
     if (nombreGuardado) {
       Swal.fire({
@@ -75,7 +75,6 @@ cargarDatosDesdeJSON().then((datos) => {
       });
     }
   }
-  
 
   function mostrarNombre() {
     const nombreGuardado = localStorage.getItem('nombreUsuario');
@@ -87,8 +86,8 @@ cargarDatosDesdeJSON().then((datos) => {
       usuarioDiv.textContent = `Bienvenido ${nombreGuardado}`;
       registrarBtn.textContent = 'Salir';
       menuUsuarioDiv.innerHTML = `
-          <button id="comparBtn">Comprar Vehiculo</button>
-          <button id="venderBtn">Vender un Vehiculo</button>
+        <button id="comparBtn">Comprar Vehiculo</button>
+        <button id="venderBtn">Vender un Vehiculo</button>
       `;
 
       const comparBtn = document.getElementById('comparBtn');
@@ -107,15 +106,15 @@ cargarDatosDesdeJSON().then((datos) => {
     const formularioHTML = `
       <h2>Cargar Nuevo Auto</h2>
       <form id="autoForm">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" required><br>
-          <label for="marca">Marca:</label>
-          <input type="text" id="marca" required><br>
-          <label for="precio">Precio:</label>
-          <input type="number" id="precio" required><br>
-          <label for="color">Color:</label>
-          <input type="text" id="color" required><br>
-          <button type="submit">Agregar auto al Catalogo</button>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" required><br>
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" required><br>
+        <label for="color">Color:</label>
+        <input type="text" id="color" required><br>
+        <button type="submit">Agregar auto al Catalogo</button>
       </form>
     `;
 
@@ -158,11 +157,11 @@ cargarDatosDesdeJSON().then((datos) => {
     const formularioHTML = `
       <h2>Comprar Auto</h2>
       <form id="compraForm">
-          <label for="autosDisponibles">Selecciona un auto:</label>
-          <select id="autosDisponibles">
-              ${autos.map((auto, index) => `<option value="${index}">${auto.nombre}</option>`).join('')}
-          </select><br>
-          <button type="submit">Quiero comprar este Auto!</button>
+        <label for="autosDisponibles">Selecciona un auto:</label>
+        <select id="autosDisponibles">
+          ${autos.map((auto, index) => `<option value="${index}">${auto.nombre}</option>`).join('')}
+        </select><br>
+        <button type="submit">Quiero comprar este Auto!</button>
       </form>
     `;
 
