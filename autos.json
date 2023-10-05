@@ -1,27 +1,58 @@
 [
-    {
-      "nombre": "Gol Trend",
-      "marca": "Volkswagen",
-      "precio": 1234567,
-      "color": "Gris Plata Lunar"
-    },
-    {
-      "nombre": "Ka",
-      "marca": "Ford",
-      "precio": 2345678,
-      "color": "Negro casi oscuro"
-    },
-    {
-      "nombre": "Clio",
-      "marca": "Renault",
-      "precio": 3456789,
-      "color": "Rojo Fuego"
-    },
-    {
-      "nombre": "Etios",
-      "marca": "Toyota",
-      "precio": 4567891,
-      "color": "Blanco Ala"
-    }
-  ]
+  {
+    "nombre": "Gol Trend",
+    "marca": "Volkswagen",
+    "precio": 1234567,
+    "color": "Gris Plata Lunar"
+  },
+  {
+    "nombre": "Ka",
+    "marca": "Ford",
+    "precio": 2345678,
+    "color": "Negro casi oscuro"
+  },
+  {
+    "nombre": "Clio",
+    "marca": "Renault",
+    "precio": 3456789,
+    "color": "Rojo Fuego"
+  },
+  {
+    "nombre": "Etios",
+    "marca": "Toyota",
+    "precio": 4567891,
+    "color": "Blanco Ala"
+  },
+  {
+    "nombre": "Civic",
+    "marca": "Honda",
+    "precio": 5678912,
+    "color": "Azul Metálico"
+  },
+  {
+    "nombre": "Mazda3",
+    "marca": "Mazda",
+    "precio": 6789123,
+    "color": "Plata Reflex"
+  },
+  {
+    "nombre": "Focus",
+    "marca": "Ford",
+    "precio": 7891234,
+    "color": "Rojo Racing"
+  },
+  {
+    "nombre": "Corolla",
+    "marca": "Toyota",
+    "precio": 8912345,
+    "color": "Gris Claro"
+  },
+  {
+    "nombre": "Veyron",
+    "marca": "Bugatti",
+    "precio": 901235,
+    "color": "Blanco Porcelana"
+  }
+]
+
   
