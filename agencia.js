@@ -1,3 +1,4 @@
+// Osvaldo Rainero - Coderhouse Trabajo Final Javascript
 function Auto(nombre, marca, precio, color) {
   this.nombre = nombre;
   this.marca = marca;
