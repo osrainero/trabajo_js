@@ -38,44 +38,19 @@ cargarDatosDesdeJSON().then((datos) => {
     autosListDiv.innerHTML = listaHTML;
   }
 
-    function registrarNombre() {
+  function registrarNombre() {
     const nombreGuardado = localStorage.getItem('nombreUsuario');
     if (nombreGuardado) {
-      Swal.fire({
-        icon: 'info',
-        title: 'Te vas?',
-        text: `¡Nos vemos, ${nombreGuardado}!`,
-      }).then(() => {
-        localStorage.removeItem('nombreUsuario');
-        mostrarNombre();
-      });
+      localStorage.removeItem('nombreUsuario');
+      mostrarNombre();
     } else {
-      Swal.fire({
-        icon: 'question',
-        title: 'Ingrese su nombre:',
-        input: 'text',
-        inputAttributes: {
-          required: 'true',
-        },
-        showCancelButton: true,
-        confirmButtonText: 'Guardar',
-        cancelButtonText: 'Cancelar',
-        allowOutsideClick: false,
-        inputValidator: (value) => {
-          if (!value) {
-            return 'Por favor, ingrese su nombre';
-          }
-        },
-      }).then((result) => {
-        if (result.isConfirmed) {
-          const nombre = result.value;
-          localStorage.setItem('nombreUsuario', nombre);
-          mostrarNombre();
-        }
-      });
+      const nombre = prompt('Ingrese su nombre:');
+      if (nombre) {
+        localStorage.setItem('nombreUsuario', nombre);
+        mostrarNombre();
+      }
     }
   }
-  
 
   function mostrarNombre() {
     const nombreGuardado = localStorage.getItem('nombreUsuario');
@@ -141,13 +116,13 @@ cargarDatosDesdeJSON().then((datos) => {
         Swal.fire({
           icon: 'success',
           title: '¡Éxito!',
-          text: 'El auto se ha agregado a nuestro catálogo.'
+          text: 'El auto se ha agregado al catálogo.'
         });
       } else {
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
-          text: 'Por favor, completa todos los campos correctamente.'
+          text: 'Por favor, complete todos los campos correctamente.'
         });
       }
     });
